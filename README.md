@@ -6,7 +6,8 @@ Run using docker for the first time
 ###########################################  
 
 #docker pull waleedka/modern-deep-learning  
-docker pull ufoym/deepo:cpu  
+#docker pull ufoym/deepo:cpu  
+docker pull kayathirim/deepo:fyp  
 docker images  
 docker images -a  
 
@@ -74,5 +75,7 @@ Copy model weights to/from docker container
 ###########################################  
 docker cp <host_directory> <container_id>:<container_path>  
 
+From Windows to Container  
 docker cp /root/FYP_Model_weights/ f4a08fba2d31:/root/  
+From Container to Windows  
 docker cp f4a08fba2d31:/root/ /root/FYP_Model_weights/  
